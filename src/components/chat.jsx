@@ -14,7 +14,7 @@ export default function Chat() {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    const newSocket = io("http://localhost:3001");
+    const newSocket = io("https://message-backend-vghm.onrender.com");
     setSocket(newSocket);
 
     newSocket.on("receive_message", (data) => {
