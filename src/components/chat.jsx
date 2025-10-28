@@ -57,7 +57,7 @@ export default function Chat() {
 
 
   return (
-    <div className="h-screen flex flex-col bg-gradient-to-br from-blue-900 to-blue-700 p-6">
+    <div className="md:h-screen flex flex-col bg-gradient-to-br from-blue-900 to-blue-700 p-6">
 
       {showModal && (
         <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50">
@@ -102,7 +102,7 @@ export default function Chat() {
                 .map((user, i) => (
                   <div
                     key={i}
-                    className="flex items-center mb-2 gap-2 bg-green-200/65 p-2 rounded-lg hover:bg-green-300 transition-all"
+                    className="flex items-center mb-2 gap-2 bg-green-200/65 p-2 rounded-lg hover:bg-green-300 transition-all "
                     title="Este usuário pode receber mensagens"
                   >
                     <div className="w-3 h-3 rounded-full bg-green-500" />
@@ -121,14 +121,14 @@ export default function Chat() {
         </div>
 
         <div className="flex-1 flex flex-col">
-          <div className="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-4 flex-1 flex flex-col">
+          <div className="bg-white/90 overflow-y-auto backdrop-blur-md rounded-2xl shadow-lg p-4 flex-1 flex flex-col">
 
             <h2 className="text-lg font-semibold  text-blue-900">Mensagens</h2>
             <p className="text-sm text-gray-600 mb-3">
               As mensagens não são salvas e serão apagadas ao atualizar ou fechar a página.
             </p>
 
-            <div className="flex-1 overflow-y-auto border border-blue-700 rounded-lg p-3 mb-3 space-y-2 min-h-[200px] max-h-[450px]">
+            <div className="flex-1 overflow-y-auto border border-blue-700 rounded-lg p-3 mb-3 space-y-2 min-h-[400px] max-h-[700px]">
               {messages.map((m, i) => {
                 const isOwnMessage = m.id === userId;
                 return (

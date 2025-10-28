@@ -23,7 +23,7 @@ export default function Login({ onLogin }) {
         <div className="h-screen overflow-hidden flex items-center justify-center bg-gradient-to-br from-blue-900 to-blue-700">
             <div className="bg-white rounded-3xl shadow-2xl w-full max-w-md p-8">
                 <h2 className="text-xl font-bold mb-4 text-blue-700 text-center">
-                    Entre com nome e avatar
+                    ENTRE COM SEU NOME E AVATAR
                 </h2>
 
                 <input
@@ -52,7 +52,7 @@ export default function Login({ onLogin }) {
 
                 <button
                     onClick={submitLogin}
-                    className="w-full bg-blue-600 text-white p-3 rounded-xl font-semibold shadow-lg hover:bg-blue-700 transition-colors hover:scale-105"
+                    className="w-full bg-blue-600 text-white p-3 rounded-xl font-semibold shadow-lg hover:bg-blue-700 transition-colors hover:scale-105 cursor-pointer"
                 >
                     Entrar
                 </button>
