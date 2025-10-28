@@ -128,7 +128,7 @@ export default function Chat() {
               As mensagens não são salvas e serão apagadas ao atualizar ou fechar a página.
             </p>
 
-            <div className="flex-1 overflow-y-auto border border-blue-700 rounded-lg p-3 mb-3 space-y-2 min-h-[400px] max-h-[700px]">
+            <div className="flex-1 overflow-y-auto border border-blue-700 rounded-lg p-3 mb-3 space-y-2 min-h-[400px] max-h-[400px] md:max-h-full">
               {messages.map((m, i) => {
                 const isOwnMessage = m.id === userId;
                 return (
