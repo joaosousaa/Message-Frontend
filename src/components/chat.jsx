@@ -94,7 +94,7 @@ export default function Chat() {
             onLogoutClick={() => setShowModal(true)}
           />
 
-          <div className="overflow-y-auto flex-1">
+          <div className="overflow-y-auto flex-1 min-h-[200px] max-h-[200px] md:max-h-full">
             <h3 className="font-semibold mb-3 text-blue-900 text-lg">Usuários online</h3>
             {onlineUsers.filter(user => user.id !== userId).length > 0 ? (
               onlineUsers
